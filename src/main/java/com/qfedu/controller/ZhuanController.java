@@ -39,6 +39,8 @@ public class ZhuanController {
     public String zhuanZhang(@PathVariable("fromId") int fromId,@PathVariable("toId") int toId,@PathVariable("money") int money){
 
         System.out.println("修改一下");
+
+        System.out.println("修改亮下");
         String result = accountService.zhuanZhang(fromId,toId,money);
         return result;
     }
